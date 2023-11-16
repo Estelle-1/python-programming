@@ -19,7 +19,7 @@ def assign_to_groups(participants, num_groups, random_seed=None):
  
     return groups
  
-groups = assign_to_groups(participants, num_groups, random_seed=12098401298472)
+groups = assign_to_groups(participants, num_groups, random_seed=40)
  
 for group_num, group in groups.items():
     print(f"Group {group_num + 1}: {', '.join(group)}")
