@@ -15,6 +15,7 @@ print(list1)
 
 print()
 print("Given below are functions for a list.")
+#Options for different functions of list
 print()
 print("1.Appending a list")
 print("2.Inserting an element to a list")
