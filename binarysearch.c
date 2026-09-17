@@ -1,4 +1,3 @@
-//Program to implement binary search for array
 #include<stdio.h>
 void main()
 {
@@ -11,7 +10,7 @@ void main()
   {
     scanf("%d",&a[i]);
   }
-  printf("Sorting Array...\n");
+  printf("Sorting Array for Binary Search...\n");
   for(i=0;i<n;i++)
   {
     for(j=0;j<n-i-1;j++)
@@ -38,10 +37,12 @@ void main()
     else if(a[mid]>search)
     {
       end=mid-1;
+      continue;
     }
     else if(a[mid]<search)
     {
-      beg=mid-1;
+      beg=mid+1;
+      continue;
     }
   }
   if(count==0)
